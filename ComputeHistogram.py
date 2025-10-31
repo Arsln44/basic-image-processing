@@ -3,13 +3,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Görüntüyü oku
-image = cv.imread("C:\\Users\\burak\\OneDrive\\Resimler\\Film Rulosu\\atam.jpg")
+image = cv.imread("test.jpg")
 hist = cv.calcHist([image],[0],None,[256],[0,256])
 
 
 if image is not None:
     # Görüntü başarıyla yüklendi, ekranda göster
-    cv.imshow("B.A.A", image)
+    cv.imshow("image", image)
 
     # Kullanıcının bir tuşa basmasını bekleyin ve pencereyi kapatın
     cv.waitKey(0)
